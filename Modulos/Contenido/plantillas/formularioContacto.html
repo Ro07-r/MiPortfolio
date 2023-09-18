@@ -1,0 +1,154 @@
+{% load static %} <!--Cargamos el directorio para que ubique la carpeta 'static' donde estan las imagenes y estilos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link type="text/css" href='{% static "CSS/styles.css"%}' rel="stylesheet"/> <!--Para que pueda ubicar los estilos-->
+  </head>
+  <body>
+    <header>
+        <div class="container"> <!--De tipo container para que solo ocupe una parte del ancho de la pantalla-->
+            <nav class="navbar navbar-expand-lg navbar-dark blue fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sobremi">Sobre mi</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Educación
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#educacion">Cursos</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#educacion">Nivel Superior</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#educacion">Idiomas</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                      </li>
+                    </ul>                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <br>
+    <br>  
+    <section class="sobremi" id="sobremi">
+        <h3 class="text-center my-5"><u>About me</u></h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-justify">
+                    <p>Soy estudiante de la Tecnicatura en Programación en la UTN de San Rafael, Mendoza, Argentina.
+                       Tengo conocimientos en los lenguajes de programación Java, Python y JavaScript.
+                       Además trabajo con HTML y CSS para el diseño de páginas web. Para la recopilación de datos manejo
+                       base de datos relacionales(MySQL) y no relacionales(MongoDB).
+                       Sé trabajar de manera colaborativa en equipo y para ello hago uso de la metodología SCRUM.
+                       Los proyectos que voy realizando los administro con la herramienta Git y cada uno de ellos
+                       se pueden visualizar en la plataforma GitHub.
+                       Estoy en constante aprendizaje, y me encantaría poder aplicar todos éstos conocimientos
+                       a un gran proyecto.
+                       <br>
+                       Para más información accede a mi Portfolio en GitHub:
+                       <a href="https://github.com/Ro07-r" target="_blank">Portfolio</a>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src='{% static "Imagenes/Profile.png" %}'/> <!--Para acceder a las imagenes-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="educacion" id="educacion">
+        <h3 class="text-center my-5"><u>Educación</u></h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="card text-center"> 
+                <img src='{% static "Imagenes/Aprende programando.png" %}' class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo Web</h5>
+                  <p class="card-text">Curso virtual que brinda nuevas herramientas y conocimientos tecnológicos para lograr un mejor desarrollo personal y profesional.</p>
+                  <a href="https://aprendeprogramandoinscripciones.bue.edu.ar/" target="_blank" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center">
+                <img src='{% static "Imagenes/Argentina programa.webp" %}' class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">Junior Full Stack</h5>
+                  <p class="card-text">Plan Nacional que tiene el objetivo de brindar capacitaciones en las temáticas de programación y habilidades digitales.</p>
+                  <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center">
+                <img src='{% static "Imagenes/Utn.jpg" %}' class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">Tecnicatura en Programación</h5>
+                  <p class="card-text">Formación profesional en el desarrollo de software con habilidades blandas, conocimiento lógico y resolución a problemas reales mediante el uso de herramientas orientadas al backend y fronted.</p>
+                  <a href="https://www.frsr.utn.edu.ar/" target="_blank" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card text-center">
+                <img src='{% static "Imagenes/Cultural britanico.jpg" %}' class="card-img-top"/>
+                <div class="card-body">
+                  <h5 class="card-title">First Certificate in English</h5>
+                  <p class="card-text">Especialización en la enseñanza del idioma inglés.</p>
+                  <a href="https://www.liceobritanico.com/" target="_blank" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      <section class="contacto bg-light" id="contacto">
+        <h3 class="text-center my-5"><u>Contacto</u></h3>
+        <div class="container">
+          <form action="/contactar/" method="POST">{% csrf_token %}
+            <div class="mb-3 col-6">
+              <label for="Asunto">Asunto:</label>
+              <input id="name" name="txtAsunto" type="text" class="form-control">
+            </div>         
+            <div class="mb-3 col-6">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" name="txtEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3 col-6">
+              <label for="Mensaje">Mensaje</label>
+              <textarea class="form-control" name="txtMensaje" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>         
+        </div>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

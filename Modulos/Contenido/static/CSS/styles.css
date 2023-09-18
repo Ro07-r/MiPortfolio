@@ -1,0 +1,25 @@
+.navbar{
+    background-color: black;
+}
+
+.sobremi{
+    text-align: justify;
+    line-height: 2em;
+}
+
+.card{
+    transition: all 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+.img-fluid{
+    transition: all 0.8s ease;
+}
+
+.img-fluid:hover{
+    transition: all 0.6s ease;
+    filter:grayscale(50%);
+}
