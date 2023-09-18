@@ -4,5 +4,7 @@
 Portfolio personal utilizando tecnologías:
 
 • HTML, CSS, JS
+
 • Bootstrap
+
 • Django
