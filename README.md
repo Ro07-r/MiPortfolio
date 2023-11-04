@@ -3,7 +3,7 @@
 
 Portfolio personal utilizando tecnologías:
 
-• HTML, CSS, JS
+• HTML, CSS
 
 • Bootstrap
 
