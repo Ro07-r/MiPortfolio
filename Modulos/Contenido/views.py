@@ -13,7 +13,7 @@ def contactar(request):
         asunto = request.POST["txtAsunto"]        
         mensaje = request.POST["txtMensaje"] + " / Mail: " + request.POST["txtEmail"] # Mail para poder contactar
         email_desde = settings.EMAIL_HOST_USER
-        email_para = ["************************"]
+        email_para = [""]
         send_mail(asunto, mensaje, email_desde, email_para, fail_silently=False)
         return render(request, "formularioContacto.html")
     else:
